@@ -1,0 +1,39 @@
+/* MultiLayerParallax.css */
+.container {
+    width:  120%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  
+  .heading {
+    font-weight: bold;
+    color: white;
+    font-size: 7rem; /* Adjust for different screen sizes if needed */
+    position: relative;
+    z-index: 10;
+  }
+  
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 9rem; /* Adjust for larger screens */
+    }
+  }
+  
+  .background,
+  .foreground {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+  }
+  
+  .background {
+    z-index: 0;
+  }
+  
+  .foreground {
+    z-index: 20;
+  }
+  
